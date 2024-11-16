@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multi Drop Zones Demo</title>
+    <style>
+      .container {
+        display: flex;
+        gap: 20px;
+        padding: 20px;
+      }
+
+      .drop-zone {
+        flex: 1;
+        min-height: 300px;
+        padding: 20px;
+        background: #f5f5f5;
+        border: 2px dashed #ccc;
+      }
+
+      .drag-item {
+        margin: 10px;
+        padding: 20px;
+        background: white;
+        border: 1px solid #ddd;
+        cursor: move;
+        user-select: none;
+      }
+
+      .placeholder {
+        border: 2px dashed #666;
+        background: #e0e0e0;
+      }
+
+      .drop-zone.drag-over {
+        background: #e3f2fd;
+        border: 2px dashed #2196f3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="drop-zone" data-zone="zone1">
+        <div class="drag-item">아이템 1-1</div>
+        <div class="drag-item">아이템 1-2</div>
+        <div class="drag-item">아이템 1-3</div>
+      </div>
+      <div class="drop-zone" data-zone="zone2">
+        <div class="drag-item">아이템 2-1</div>
+        <div class="drag-item">아이템 2-2</div>
+        <div class="drag-item">아이템 2-3</div>
+      </div>
+    </div>
+    <script type="module" src="main.ts"></script>
+  </body>
+</html>

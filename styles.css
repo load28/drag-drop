@@ -1,0 +1,20 @@
+.drag-placeholder {
+  border: 2px dashed #ccc;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin: 5px 0;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  display: block;
+  visibility: visible;
+}
+
+.dragging {
+  opacity: 0.5;
+  position: relative;
+  z-index: 1000;
+}
+
+.drop-zone.dragover {
+  background-color: rgba(0, 0, 0, 0.05);
+  border-color: #666;
+}
